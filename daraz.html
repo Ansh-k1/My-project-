@@ -1,0 +1,394 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<html>
+    <style>
+        *{
+            margin: 0px;
+            padding:0px;
+        }
+        body{
+            background-color: #f5f5f5;
+        }
+        ul{
+            background-image: linear-gradient(to right,#f45404,#f74c06,#e06231);
+            height:119px;
+        }
+
+        #li_div{
+            /* background-color: blue; */
+            width:650px;
+            display: flex;
+            justify-content: space-around;
+            margin-left: 670px  ;
+            margin-top: -77px;
+        }
+
+
+        li{
+            color: white;
+            list-style: none;
+            font-family: Arial;
+            font-size: 12px;
+        }
+
+        #li_div li a{
+            text-decoration: none;
+        }
+
+
+
+        li:hover{
+            color:rgb(227, 223, 223)
+        }
+
+        #logo{
+            height:40px;
+            filter: brightness(0) invert(1);
+            margin-top: 40px;
+            margin-left: 140px ;    
+            
+        }
+
+       
+
+        input{
+            width:687px;
+            height:45px;
+            position: absolute;
+            margin-top: 40px;
+            margin-left: 90px;
+        }
+
+
+        #cart{
+            height:30px;
+            filter: brightness(0)invert();
+            margin-left: 800px;
+        }
+
+        
+        /* Slider Div Start  */
+        #slider{
+            height:344px;
+            width:988px;
+            overflow: hidden;
+            margin-left: 140px;
+
+        }
+
+        figure{
+            display: flex;
+            animation: 80s slider ease-in-out;
+        }
+
+        #slider figure img{
+           height:344px;
+           width:988px;
+          
+        }
+
+        @keyframes slider{
+            6.6%{margin-left: -100%;}
+            13.2%{margin-left:-200%;}
+            19.8%{margin-left:-300%;}
+            26.4%{margin-left:-400%;}
+            33%{margin-left:-500%;}
+            39.6%{margin-left:-600%;}
+            46.2%{margin-left:-700%;}
+            52.8%{margin-left:-800%;}
+            59.4%{margin-left:-900%;}
+            66%{margin-left:-1000%;}
+            72.6%{margin-left:-1200%;}
+            79.2%{margin-left:-1300%;}
+            85.8%{margin-left:-1400%;}
+            92.4%{margin-left:0%;}
+        }
+        /* Ending of Slider */
+
+
+
+        /* Side Div near Slider */
+        #side_div{
+            height:340px;
+            width:200px;
+            /* background-color: aliceblue; */
+            box-shadow: 2px 2px 2px 2px grey;
+            color: rgb(134, 54, 54);
+            margin-left: 1140px;
+            margin-top: -340px;
+        }
+
+        #side_div b{
+            font-size: 14px;
+            font-family: Arial;
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 10px;
+        }
+        
+
+        #side_div img{
+            margin-left: 15px;
+            height:45px;
+        }
+
+
+        #side_div #side_another_img{
+            margin-top: 6px;
+            height:250px;
+        }
+        h5{
+            font-family: Arial;
+            font-size: 12px;
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+        /* Ending Of Small div near the Slider */
+
+
+
+
+
+
+
+
+        /* After Slider Part {Flash Sale} {div} */
+        p{
+            font-size: 23px;
+            font-family: Arial;
+            margin-left: 138px;
+            margin-top: 40px;
+        }
+       
+        #on_sale_now{
+            height:380px;
+            width:1200px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-evenly;
+            margin-left: 140px;
+            margin-top: 10px;
+           
+        }
+
+        #on_sale_now #all{
+            width:184px;
+            height:290px;
+            /* background-color: #f74c06;
+            border: 2px solid black; */
+            margin-top: 80px;
+        }
+
+        #on_sale_now #all:hover{
+            box-shadow: 1px 1px 1px 1px grey;
+        }
+
+
+        #on_sale_now p{
+            margin-top: 10px;
+            margin-left: 7px;
+            font-size: 15px;
+        }
+
+        #on_sale_now #all img{
+            height:180px;
+        }
+
+        #on_sale_now b{
+            position: absolute;
+            font-family: Arial;
+            color: #e06231;
+            margin-top: 20px;
+            margin-left: -1000px;
+            /* margin-left: -40px; */
+        }
+
+        #on_sale_now #all b{
+            font-size: 20px;
+            margin-left: 8px;
+        }
+
+        #shop{
+            position: absolute;
+            height:35px;
+            width:190px;
+            font-size: 13px;
+            border:2px solid #e06231;
+            margin-left: 1000px;
+            margin-top: 10px;
+        }
+        #shop b{
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+        /* Ending Of First Div After Slider */
+        
+
+
+
+
+
+        /* Next {Categories} there are two main divs
+         {Categorie_div,#Categorie_div_two} Each single div have further inside
+          8 small boxs means total 16  */
+
+        #Categorie_div,#Categorie_div_two{
+            height:150px;
+            width:1200px;
+            background-color: rgb(255, 255, 255);
+            display: flex;
+            justify-content: space-around;
+            margin-left: 140px;
+            margin-top: 10px;
+        }
+
+        #Categorie_div_two{
+            margin-top: 0px;
+        }
+
+
+        #Categorie_div .cate, #Categorie_div_two .cate{
+            width:150px;
+            height:150px;
+            border: 1px solid rgb(225, 225, 225);
+        }
+
+
+        #Categorie_div .cate:hover{
+           box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(199, 194, 194);
+        }
+        #Categorie_div_two .cate:hover{
+           box-shadow: 1.5px 1.5px 1.5px 1.5px rgb(199, 194, 194);
+        }
+
+
+
+        #Categorie_div img ,#Categorie_div_two img{
+            height:80px;
+            margin-left: 35px;
+            margin-top: 13px;
+        }
+
+       #Categorie_div p ,#Categorie_div_two p{
+        font-size: 15px;
+        margin-left: 20px;
+        margin-top: 10px;
+       }
+       /* Ending Of Categorie divs */
+
+
+       
+
+ 
+
+
+
+        
+
+            
+
+
+    </style>
+    <body>
+        <nav>
+            <ul>
+                <img src = "daraz.jpeg" id = "logo">
+                <input type="text" placeholder="Search">
+                <img src = "cart.jpeg" id = "cart">
+
+
+                 <div id = "li_div">
+                <li>SAVE MORE ON APP</li>
+                <li>SELL ON DARAZ</li>
+                <li>HELP & SUPPORT</li>
+                <li>LOGIN</li>
+                <li>SIGN UP</li>
+                <li>زبان تبدیل کریں</li>
+                 </div>
+            </ul>
+        </nav>
+
+        <div id = "slider">
+            <figure>
+            <img src = "s1.jpeg">
+            <img src = "s2.jpeg">
+            <img src = "s3.jpeg">
+            <img src = "s4.jpeg">
+            <img src = "s5.jpeg">
+            <img src = "s6.jpeg">
+            <img src = "s7.jpeg">
+            <img src = "s8.jpeg">
+            <img src = "s9.jpeg">
+            <img src = "s10.jpeg">
+            <img src = "s11.jpeg">
+            <img src = "s12.jpeg">
+            <img src = "s13.jpeg">
+            <img src = "s14.jpeg">
+            <img src = "s15.jpeg">
+            </figure>
+       
+        </div>
+
+        
+        <div id = "side_div">
+         <img src = "daraz_logo.jpeg" >
+         <b> TRY DARAZ APP </b>
+         <img src = "side_img.jpeg" id = "side_another_img">
+         <h5>Download The App Now!</h5>
+        </div>
+
+        <p>Flash Sale</p>   
+
+
+
+        <div id = "on_sale_now">
+            <b> On Sale Now</b>
+
+            <div id = "shop"><b>SHOP ALL PRODUCTS</b></div>
+
+            <div id = "all"><img src = "i1.jpeg"> <p>Airpods_pro Wireless Earbuds Bluetooth 5.0..</p> <b> Rs.782</b></div>
+            <div  id = "all"><img src = "i2.jpeg"><p>TWS Airpods_with Super Sound & high Quality..</p><b> Rs.808</b></div>
+            <div  id = "all"><img src = "i3.jpeg"><p>Air buds Air 31 Wireless Bluetooth-Compatiable..</p><b> Rs.763</b></div>
+            <div  id = "all"><img src = "i4.jpeg"><p>M10,A6s,F2 earbuds Headphones, Handfree,...</p><b> Rs.408</b></div>
+            <div  id = "all"><img src = "i5.jpeg"><p>AirPods_Pro il2 & i7s Wireless Earbuds,..</p><b> Rs.762</b></div>
+            <div  id = "all"><img src = "i6.jpeg"><p>Kitchen accessories fan Faucettap shower/360..</p><b> Rs.1,216</b></div>
+        </div>
+
+
+        <p>Categories</p>
+        <div id = "Categorie_div">
+            <div class = "cate"><img src = "se1.jpeg"><p>Brooms,Mops &<br> Sweepers</p></div>
+            <div class = "cate"><img src = "se2.jpeg"><p>Messenger Bags</p></div>
+            <div class = "cate"><img src = "se3.jpeg"><p>Sunglasses</p></div>
+            <div class = "cate"><img src = "se4.jpeg"><p>Coffee Machines</p></div>
+            <div class = "cate"><img src = "se5.jpeg"><p>Tote Bags</p></div>
+            <div class = "cate"><img src = "se6.jpeg"><p>Early Learning</p></div>
+            <div class = "cate"><img src = "se7.jpeg"><p>Dog & Cat Beds</p></div>
+            <div class = "cate"><img src = "se8.jpeg"><p>Mobiles</p></div>
+        </div>
+
+
+
+        <div id = "Categorie_div_two">
+            <div class = "cate"><img src = "se9.jpeg"><p>Sewing Machine Parts &..</p></div>
+            <div class = "cate"><img src = "se10.jpeg"><p>Starter Kits</p></div>
+            <div class = "cate"><img src = "se11.jpeg"><p>Blocks & Building Toys</p></div>
+            <div class = "cate"><img src = "se12.jpeg"><p>Matress Protectors</p></div>
+            <div class = "cate"><img src = "se13.jpeg"><p>Knife Sharpner & Blocks</p></div>
+            <div class = "cate"><img src = "se14.jpeg"><p>Microphones</p></div>
+            <div class = "cate"><img src = "se15.jpeg"><p>Towels</p></div>
+            <div class = "cate"><img src = "se16.jpeg"><p>Stationary</p></div>
+        </div>
+
+        
+    </body>
+</html>
